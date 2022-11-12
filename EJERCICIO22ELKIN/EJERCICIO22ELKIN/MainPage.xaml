@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="EJERCICIO22ELKIN.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Grabar Video" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <video:VideoPlayer x:Name="video"  BackgroundColor="White" HorizontalOptions="Center" HeightRequest="300"  />
+
+        <Entry Placeholder="Descripcion" Margin="30,10,30,0" x:Name="txtdescripcion"/>
+
+        <Button Text="Grabar Video" x:Name="btnGrabar" Clicked="btgGrabar_Clicked" CornerRadius="25" Margin="50,10,50,10" BackgroundColor="#35AAFB"/>
+
+        <Button Text="Guardar" x:Name="btnSalvar" Clicked="btnguardar_Clicked" CornerRadius="25" Margin="50,10,50,10" BackgroundColor="#35FB3E"/>
+
+        <Button Text="Listar" Grid.ColumnSpan="2" x:Name="btnlistarvideo" Clicked="btnlistar_Clicked" CornerRadius="25" Margin="50,10,50,10" BackgroundColor="#FF276C"/>
+
+    </StackLayout>
+
+</ContentPage>
